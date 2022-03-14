@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+}
+
+navbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: aliceblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: white !important;
+}
+
+#first-page {
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.second-page {
+    background-image: url(second.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+}
+
+.second-page img {
+    -webkit-box-shadow: 17px 4px 69px 5px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 17px 4px 69px 5px rgba(0, 0, 0, 0.19);
+    box-shadow: 17px 4px 69px 5px rgba(0, 0, 0, 0.19);
+}
+
+.about:hover {
+    color: burlywood;
+}
+
+.projects {
+    background-image: url(threepic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.projectsize {
+    max-height: fit-content;
+}
+
+.last-page {
+    width: 100%;
+    height: fit-content;
+}
+
+.footer {
+    background-color: black;
+}
