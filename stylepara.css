@@ -1,0 +1,52 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.image1,
+.image2,
+.image3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.image1 {
+    background-image: url("hyderabad_charminar.jpg");
+    height: 100vh;
+}
+
+.image2 {
+    background-image: url("Ramoji-Film-City.jpg");
+    height: 400px;
+}
+
+.image3 {
+    background-image: url("Hussain_Sagar_Lake_Hyderabad.jpg");
+    height: 400px;
+}
+
+.image4 {
+    background-image: url("hyderabad_charminar_night.jpg");
+    height: 740px;
+}
+
+section {
+    padding: 40px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+span {
+    letter-spacing: 5px;
+    padding: 20px;
+}

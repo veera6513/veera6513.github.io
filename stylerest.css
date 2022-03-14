@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-brand {
+    color: black;
+    font-size: 4rem;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+.nav-link {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: black;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.search {
+    height: 4rem;
+    width: 100%;
+    border-radius: 6rem;
+    outline: none;
+    border: 0.2rem solid rgb(248, 26, 92);
+    margin-right: -3.5rem;
+}
+
+.btn {
+    height: 4rem;
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 1.3rem;
+    background: rgb(248, 26, 92);
+    color: white;
+    font-weight: 700;
+}
+
+.main {
+    background-image: url(firstpic.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: 50% 50%;
+}
+
+.main h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.product h1 {
+    font-weight: 700;
+}
+
+.items h1 {
+    font-weight: 700;
+}
+
+.hotel h1 {
+    font-weight: 700;
+}
+
+.contact h1 {
+    font-weight: 700;
+}
+
+.card-body:hover {
+    box-shadow: 1px 10px 95px -30px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 10px 95px -30px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 10px 95px -30px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}

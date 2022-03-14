@@ -1,0 +1,133 @@
+    /*Here margin:0; and padding:0; will Resets the pages default margin and padding for the entire html file.
+     This will allow us to have more control when we are styling specific elements. */
+    /*box-sizing: border-box; if we add padding to the content it won't affect size of the box*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /*By keeping 62.5% here we are making 1rem unit equals to 10px(so that we can use rem for uniting and by Default 1rem=16px;)*/
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    .header {
+        background-color: rgb(12, 8, 8);
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .heading {
+        background-color: rgb(224, 214, 63);
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .magic {
+        margin: 0;
+        padding: 0;
+        color: rgb(252, 248, 248);
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 21rem;
+    }
+    
+    p {
+        color: rgb(240, 240, 240);
+        font-size: 5rem;
+        padding-left: 4rem;
+        padding-top: 1.5rem;
+        font-style: italic;
+        font-weight: bold;
+        text-shadow: 0.2rem 0.4rem rgb(15, 226, 216);
+    }
+    
+    .center {
+        font-size: 8rem;
+        padding: 11rem;
+        color: white;
+        text-align: center;
+    }
+    
+    .container {
+        background-color: rgb(16, 202, 248);
+    }
+    /*text-shadow first value will decide distances between text and shadow 
+    and second value will decide the height between text and shadow*/
+    
+    .container .heading {
+        font-size: 3rem;
+        padding: 3rem;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0.2rem 0.3rem rgb(0, 0, 0);
+        color: rgb(254, 255, 255);
+    }
+    /*here Display:flex plays vital role and
+     flex-flow will set the flow of items in column wise*/
+    
+    .container .music-container {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+    
+    .container .music-container .box {
+        height: 17rem;
+        width: 80%;
+        background-color: #334246;
+        display: flex;
+        align-items: center;
+        border-radius: 2rem;
+        overflow: hidden;
+        margin: 2rem;
+    }
+    
+    .container .music-container .box .image {
+        height: 100%;
+        width: 30%;
+    }
+    
+    .container .music-container .box .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .container .music-container .box .music {
+        width: 70%;
+    }
+    
+    .container .music-container .box .music audio {
+        width: 100%;
+        outline: none;
+    }
+    
+    .container .music-container .box .music audio::-webkit-media-controls-enclosure {
+        background: none;
+    }
+    
+    @media (max-width:700px) {
+        .magic {
+            visibility: hidden;
+        }
+        .container {
+            height: auto;
+            width: auto;
+        }
+        .container .music-container .box {
+            height: 13rem;
+            width: 90%;
+            flex-flow: wrap;
+        }
+        .container .music-container .box .image {
+            height: 70%;
+            width: 100%;
+        }
+        .container .music-container .box .music {
+            height: 30%;
+            width: 100%;
+        }
+    }
